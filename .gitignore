@@ -9,3 +9,6 @@ build
 
 ### debug files ###
 *.dSYM
+
+### VSCode ###
+.vscode
