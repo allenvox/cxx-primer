@@ -9,6 +9,6 @@ int main() {
   // std::cout << /* "*/" */;
 
   // unreadable but working - NOT TO DO
-  std::cout << /* "*/" /* "/*" */;
+  std::cout << /* "*/ " /* " /*" */;
   return 0;
 }

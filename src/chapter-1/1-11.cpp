@@ -4,12 +4,12 @@ int main() {
   std::cout << "Enter two int values:\n";
   int a, b;
   std::cin >> a >> b;
-  if(a > b) {
+  if (a > b) {
     int temp = a;
     a = b;
     b = temp;
   }
-  while(a <= b) {
+  while (a <= b) {
     std::cout << a << ' ';
     ++a;
   }
