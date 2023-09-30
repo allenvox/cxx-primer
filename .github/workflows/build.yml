@@ -1,0 +1,16 @@
+name: Build
+on: push
+
+jobs:
+  check_codestyle:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+      - name: Check codestyle
+        run: git ls-files '*.cpp' '*.hpp' | xargs clang-format -i --verbose && git diff --exit-code
+  build_all:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+      - name: Build all applications
+        run: cmake --preset default && cmake --build --preset default
