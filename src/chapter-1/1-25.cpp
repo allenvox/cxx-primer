@@ -5,10 +5,10 @@
 int main() {
   std::cout << "(press Ctrl+D to stop)\nEnter some grouped items:\n";
   Sales_item total;
-  if(std::cin >> total) {
+  if (std::cin >> total) {
     Sales_item trans;
-    while(std::cin >> trans) {
-      if(total.isbn() == trans.isbn())
+    while (std::cin >> trans) {
+      if (total.isbn() == trans.isbn())
         total += trans;
       else {
         std::cout << total << std::endl;
