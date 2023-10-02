@@ -12,3 +12,6 @@ build
 
 ### VSCode ###
 .vscode
+
+### JetBrains ###
+.idea/
