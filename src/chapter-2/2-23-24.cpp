@@ -9,7 +9,7 @@ int main() {
   int i = 42;
   void *p = &i; // general (non-type) pointer, can point to any type of object
   // but we should cast to a specific type when using
-  std::cout << static_cast<int *>(p);
+  std::cout << static_cast<int *>(p) << std::endl;
   // long *lp = &i; // wrong - long and int might have different sizes in memory
   return 0;
 }
