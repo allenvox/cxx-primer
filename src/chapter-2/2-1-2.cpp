@@ -1,6 +1,7 @@
 #include <iostream>
 
 int main() {
+  // 2.1
   int a = 2147483647; // -2147483648 to 2147483647
   std::cout << "max int value = " << a << '\n';
   long b = 9223372036854775807; // -9223372036854775808 to 9223372036854775807
@@ -10,6 +11,7 @@ int main() {
   short d = 32767; // -32768 to 32767
   std::cout << "max short value = " << d << '\n';
 
+  // 2.2
   double coef = 0.255551; // for accuracy
   int total = 100000;     // for easy handling and containing
   double monthly_payment = static_cast<double>(total) * coef;
