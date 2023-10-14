@@ -2,7 +2,7 @@
 
 int main() {
   // 2.27
-  int j = -1;//, &r = 0; // wrong - non const reference is only for lvalues
+  int j = -1; //, &r = 0; // wrong - non const reference is only for lvalues
   std::cout << j << ' ';
   const int i = -1, &r = 0; // const reference is ok
   std::cout << i << ' ' << r << ' ';
@@ -17,7 +17,7 @@ int main() {
 
   // 2.28
   int *const cp = nullptr; // default init, cp's in-value can't be changed
-  if(cp == nullptr) {
+  if (cp == nullptr) {
     std::cout << "\ncp is nullptr\n";
   }
   // const int ic, &r2 = ic; // wrong - no init of const int
@@ -25,7 +25,7 @@ int main() {
   pp = &i;
   std::cout << *pp << ' ';
   int *const p5 = nullptr; // default but bad - can't change nullptr
-  if(p5 == nullptr) {
+  if (p5 == nullptr) {
     std::cout << "\np5 is nullptr\n";
   }
 
