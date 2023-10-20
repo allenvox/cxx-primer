@@ -1,10 +1,4 @@
 function(set_compile_options target_name)
-  if(MSVC)
-    target_compile_options(${target_name} PRIVATE /W4 /WX /EHsc)
-  else()
-    target_compile_options(${target_name} PRIVATE -Wall -Wextra -Werror -pedantic)
-  endif()
-
   set_target_properties(
     ${target_name}
     PROPERTIES
@@ -12,7 +6,6 @@ function(set_compile_options target_name)
       CXX_STANDARD_REQUIRED ON
       CXX_EXTENSIONS OFF
   )
-
   if(CLANG_TIDY_EXE)
     set_target_properties(
       ${target_name}
