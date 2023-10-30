@@ -1,3 +1,4 @@
+#include <cstdint>
 #include <iostream>
 
 bool isAligned(void *ptr, size_t alignment) {
