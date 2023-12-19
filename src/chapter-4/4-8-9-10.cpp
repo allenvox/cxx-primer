@@ -19,7 +19,7 @@ int main() {
   // 4.10
   int num = 0;
   std::cout << "Enter a number:\n";
-  while(std::cin >> num && num != 42) {
+  while (std::cin >> num && num != 42) {
     std::cout << "Ok, you've entered not 42. Go ahead:\n";
   }
   std::cout << "I hate 42\n";
