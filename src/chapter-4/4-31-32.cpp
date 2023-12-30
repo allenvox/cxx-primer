@@ -14,7 +14,7 @@ int main() {
     cout << cnt << ' ';
   }
   // result - 5, 4, 3, ...
-  
+
   cout << "\nPostfix increment: ";
   for (vector<int>::size_type ix = 0; ix != ivec.size(); ix++, cnt--) {
     ivec[ix] = cnt;
